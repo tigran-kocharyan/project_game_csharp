@@ -1,0 +1,6 @@
+C:\Users\Tigran_K\source\repos\KDZ\Gun_Library\bin\Debug\Gun_Library.dll
+C:\Users\Tigran_K\source\repos\KDZ\Gun_Library\bin\Debug\Gun_Library.pdb
+C:\Users\Tigran_K\source\repos\KDZ\Gun_Library\obj\Debug\Gun_Library.csprojAssemblyReference.cache
+C:\Users\Tigran_K\source\repos\KDZ\Gun_Library\obj\Debug\Gun_Library.csproj.CoreCompileInputs.cache
+C:\Users\Tigran_K\source\repos\KDZ\Gun_Library\obj\Debug\Gun_Library.dll
+C:\Users\Tigran_K\source\repos\KDZ\Gun_Library\obj\Debug\Gun_Library.pdb

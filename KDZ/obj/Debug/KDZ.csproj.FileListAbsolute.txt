@@ -1,0 +1,10 @@
+C:\Users\Tigran_K\source\repos\KDZ\KDZ\bin\Debug\KDZ.exe.config
+C:\Users\Tigran_K\source\repos\KDZ\KDZ\bin\Debug\KDZ.exe
+C:\Users\Tigran_K\source\repos\KDZ\KDZ\bin\Debug\KDZ.pdb
+C:\Users\Tigran_K\source\repos\KDZ\KDZ\bin\Debug\Gun_Library.dll
+C:\Users\Tigran_K\source\repos\KDZ\KDZ\bin\Debug\Gun_Library.pdb
+C:\Users\Tigran_K\source\repos\KDZ\KDZ\obj\Debug\KDZ.csprojAssemblyReference.cache
+C:\Users\Tigran_K\source\repos\KDZ\KDZ\obj\Debug\KDZ.csproj.CoreCompileInputs.cache
+C:\Users\Tigran_K\source\repos\KDZ\KDZ\obj\Debug\KDZ.csproj.CopyComplete
+C:\Users\Tigran_K\source\repos\KDZ\KDZ\obj\Debug\KDZ.exe
+C:\Users\Tigran_K\source\repos\KDZ\KDZ\obj\Debug\KDZ.pdb
