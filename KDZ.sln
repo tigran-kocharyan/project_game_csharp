@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KDZ", "KDZ\KDZ.csproj", "{2F3410C8-470B-4DD8-85D4-8937C0C9AC3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gun_Library", "Gun_Library\Gun_Library.csproj", "{2925829B-8C6C-46F8-8CC8-DFC6886B84EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F3410C8-470B-4DD8-85D4-8937C0C9AC3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3410C8-470B-4DD8-85D4-8937C0C9AC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3410C8-470B-4DD8-85D4-8937C0C9AC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3410C8-470B-4DD8-85D4-8937C0C9AC3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2925829B-8C6C-46F8-8CC8-DFC6886B84EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2925829B-8C6C-46F8-8CC8-DFC6886B84EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2925829B-8C6C-46F8-8CC8-DFC6886B84EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2925829B-8C6C-46F8-8CC8-DFC6886B84EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08D9D1D3-83FC-47FE-9854-6FFC7A5B9B78}
+	EndGlobalSection
+EndGlobal
