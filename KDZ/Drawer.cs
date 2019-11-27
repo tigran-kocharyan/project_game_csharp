@@ -25,10 +25,42 @@ namespace KDZ
             Console.ResetColor();
         }
 
-        static public void MagentaConsole(string message)
+        static public void DarkMagentaConsole(string message)
         // The function takes the message to the CLI and makes it Magenta for a good perfomance.
         {
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
+
+        static public void MagentaConsole(string message)
+        // The function takes the message to the CLI and makes it Magenta for a good perfomance.
+        {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
+
+        static public void CyanConsole(string message)
+        // The function takes the message to the CLI and makes it Cyan for a good perfomance.
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
+
+        static public void DarkGrayConsole(string message)
+        // The function takes the message to the CLI and makes it DarkGray for a good perfomance.
+        {
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
+
+        static public void WhiteConsole(string message)
+        // The function takes the message to the CLI and makes it White for a good perfomance.
+        {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(message);
             Console.ResetColor();
         }

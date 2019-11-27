@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gun_Library
 {
-    class Machinegun : AutomaticWeapon
+    public class Machinegun : AutomaticWeapon
     {
         protected int lifeTime;
         protected double breaking;
@@ -52,12 +52,11 @@ namespace Gun_Library
             }
         }
 
-        public Machinegun(int patrons, int damage, double coef, int lifeTime, double breaking) : base(patrons, lifeTime, coef)
+        public Machinegun(int patrons, int damage, double coef, int lifeTime, double breaking) : base(patrons, damage, coef)
         {
             Breaking = breaking;
             lifeTimeNow = lifeTime;
         }
-
         public override int Shoot()
         {
             if (IsWorking)
