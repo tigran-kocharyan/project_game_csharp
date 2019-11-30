@@ -64,5 +64,21 @@ namespace KDZ
             Console.WriteLine(message);
             Console.ResetColor();
         }
+
+        static public void YellowConsole(string message)
+        // The function takes the message to the CLI and makes it Yellow for a good perfomance.
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
+
+        static public void DarkYellowConsole(string message)
+        // The function takes the message to the CLI and makes it Dark Yellow for a good perfomance.
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
     }
 }

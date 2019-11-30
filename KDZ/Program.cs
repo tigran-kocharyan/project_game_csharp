@@ -25,7 +25,7 @@ namespace KDZ
             int number;
             Drawer.GreenConsole(Environment.NewLine + "Теперь пришло время купить немного ПУШЕК!" + Environment.NewLine);
             Drawer.WhiteConsole("Вот тебе краткий список, введи номер оружия для приобретения:\n" +
-                "1) Пистолет - 10 монет.\n2) Автоматическая винтовка - 15 монет.\n3) Пулемет - 20 монет.");
+                "1) Пистолет - 10 монет.\n2) Автоматическая винтовка - 15 монет.\n3) Пулемет - 20 монет."+ Environment.NewLine);
 
             while (money >= 10)
             {
@@ -60,7 +60,7 @@ namespace KDZ
                         if (money >= 20)
                         {
                             money -= 20;
-                            Machinegun machinegun = new Machinegun(random.Next(10, 26), random.Next(8, 17), random.NextDouble()*0.1+0.3, random.Next(2, 5), random.NextDouble()*0.2+0.1);
+                            Machinegun machinegun = new Machinegun(random.Next(10, 26), random.Next(8, 17), random.NextDouble() * 0.1 + 0.3, random.Next(2, 5), random.NextDouble() * 0.2 + 0.1);
                             Drawer.GreenConsole($"Поздравляю, ты купил пулемёт с {machinegun.Patrons} патронами в обойме" +
                                 $" и дамагом {machinegun.Damage}. Твой шанс промазать с ним равен {machinegun.Coef:F3}, везунчик!");
                             arsenal.Add(machinegun);
@@ -75,6 +75,7 @@ namespace KDZ
                         Drawer.RedConsole("Попробуйте ввести другие данные!");
                         break;
                 }
+                Drawer.YellowConsole(Environment.NewLine+"\t\t\t\t <<АРСЕНАЛ ВАШЕГО ОРУЖИЯ БЫЛ УСПЕШНО СОЗДАН>>" + Environment.NewLine);
             }
             return arsenal;
         }
@@ -84,11 +85,23 @@ namespace KDZ
             Drawer.MagentaConsole("\t\t\t\t\t<<НАЧАЛО ТВОЕГО ВЕЛИКОГО ПУТИ>>" + Environment.NewLine);
             do
             {
+                // This part is responsible for creating the arsenal of the hero.
                 int money = ReadInt("Для начала, введи количество монет для покупки оружия: ", 1);
                 List<Gun> arsenal = new List<Gun>();
-
                 arsenal = BuyGuns(arsenal, money);
 
+                // This part is responsible for making the enemies' crews.
+                int crews = ReadInt("Теперь пора ввести количество отрядов противников!", 1);
+                Mob[] mobs = new Mob[crews];
+                for (int i = 0; i < crews; i++)
+                {
+                    Drawer.DarkYellowConsole($"Введите параметры для отряда под номером #{i+1}");
+                    mobs[i] = new Mob(ReadInt($"Количество монстров в этом отряде: ", 1), ReadInt($"Количество жизней у всего отряда: ", 1));
+                }
+                foreach (Mob item in mobs)
+                {
+                    Console.WriteLine($"Жизнь у самого слабого монстра - {item.MaxDamage}");
+                }
                 Drawer.DarkGrayConsole("Введите ENTER для продолжения, в противном случае," +
                     " нажмите на любую клавишу");
             } while (Console.ReadKey(true).Key == ConsoleKey.Enter);

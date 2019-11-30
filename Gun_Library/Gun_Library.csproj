@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AutomaticWeapon.cs" />
     <Compile Include="Machinegun.cs" />
+    <Compile Include="Mob.cs" />
     <Compile Include="Pistol.cs" />
     <Compile Include="Gun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
