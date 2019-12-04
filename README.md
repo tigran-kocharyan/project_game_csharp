@@ -8,4 +8,4 @@
 ### Hope some users can find it useful.
 Stealing some data for own purposes (please, do it after December 8 2019, I still need to pass it (◕‿◕)
 
-**You can find me on [VK](https://vk.com/k_tigran)**
+**YOU CAN FIND ME ON [VK](https://vk.com/k_tigran)**
