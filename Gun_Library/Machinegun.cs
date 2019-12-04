@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Gun_Library
 {
+    /// <summary>
+    /// Class contains fields of the machinegun and overrided method Shoot.
+    /// </summary>
     public class Machinegun : AutomaticWeapon
     {
         protected int lifeTime;
@@ -13,7 +16,6 @@ namespace Gun_Library
         protected bool isWorking; 
 
         public int lifeTimeNow { get; protected set; }
-        public bool IsBroken { get; protected set; }
         public bool IsWorking
         {
             get
@@ -56,7 +58,9 @@ namespace Gun_Library
         {
             Breaking = breaking;
             lifeTimeNow = lifeTime;
+            this.lifeTime = lifeTime;
         }
+        // Overriding the abstract method Shoot.
         public override int Shoot()
         {
             if (IsWorking)

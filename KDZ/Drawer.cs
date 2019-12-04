@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace KDZ
 {
+    /// <summary>
+    /// This class allows to colour the default Console fonts and reset it afterwards.
+    /// Is supposed to make the CLI perfomance much better by changing the color of messages.
+    /// </summary>
     public class Drawer
-        //This class is supposed to make the CLI perfomance much better by changing the color of messages.
     {
         static public void RedConsole(string message)
         // The function takes the message to the CLI and makes it Red for a good perfomance.
@@ -77,6 +80,14 @@ namespace KDZ
         // The function takes the message to the CLI and makes it Dark Yellow for a good perfomance.
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
+
+        static public void DarkRedConsole(string message)
+        // The function takes the message to the CLI and makes it Dark Yellow for a good perfomance.
+        {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine(message);
             Console.ResetColor();
         }

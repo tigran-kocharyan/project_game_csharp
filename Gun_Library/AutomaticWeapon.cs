@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace Gun_Library
 {
+    /// <summary>
+    /// Class contains the chars of the AutomaticWeapon Gun and overrides the method Shoot().
+    /// </summary>
     public class AutomaticWeapon : Gun
     {
         // Protected Fields.
         protected double coef;
+
         // Public Properties.
         public double Coef
         {
@@ -22,6 +26,22 @@ namespace Gun_Library
                 coef = value;
             }
         }
+
+        public bool IsWorking
+        {
+            get
+            {
+                if (patrons > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
         // Constructor of the AutomaticWeapon Class.
         public AutomaticWeapon(int patrons, int damage, double coef)
         {

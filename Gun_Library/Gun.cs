@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Gun_Library
 {
+    /// <summary>
+    /// Class contains the abstract method and private field for the different guns.
+    /// </summary>
     public abstract class Gun
     {
         public static Random random = new Random();
@@ -23,6 +26,7 @@ namespace Gun_Library
                 patrons = value;
             }
         }
+        public bool IsBroken { get; protected set; }
         public int Damage
         {
             get
